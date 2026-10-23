@@ -4,3 +4,22 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: #2f5bea;
+    --primary-dark: #1e3a8a;
+    --primary-hover: #2549c4;
+    --primary-light: #93b4fb;
+    --background: #ffffff;
+    --text-primary: #0f1b3d;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --border: rgba(15, 27, 61, 0.12);
+    --card-bg: #f1f5fd;
+    --shadow: rgba(15, 27, 61, 0.12);
+    --input-bg: #f1f5fd;
+}
+
+body{
+    font-family: sans-serif;
+
+}
