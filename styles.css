@@ -42,7 +42,7 @@ h1 + p{
     margin-bottom: 2rem;
 }
 
-header{
+body > header{
     border-bottom: 1px solid var(--border);
     background: var(--background);
     padding: .5rem 1rem;
@@ -50,4 +50,13 @@ header{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+}
+
+body > header hd{
+    color: var(--primary);
+}
+
+body > header nav{
+    display: flex;
+    gap: 24px
 }
