@@ -24,6 +24,12 @@ a{
     color: inherit;
 }
 
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 body{
     font-family: sans-serif;
     background-color: var(--background);
