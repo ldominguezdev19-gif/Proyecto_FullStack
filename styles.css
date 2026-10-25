@@ -52,7 +52,7 @@ body > header{
     gap: 2rem;
 }
 
-body > header hd{
+body > header h2{
     color: var(--primary);
 }
 
@@ -60,3 +60,24 @@ body > header nav{
     display: flex;
     gap: 24px
 }
+
+body > header nav a:hover{
+    color: var(--primary);
+}
+
+body > header div a{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+body > header div a:last-child{
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+body > header div a:last-child:hover{
+    background-color: var(--primary-hover);
+}
+
