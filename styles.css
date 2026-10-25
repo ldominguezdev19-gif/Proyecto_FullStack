@@ -81,3 +81,15 @@ body > header div a:last-child:hover{
     background-color: var(--primary-hover);
 }
 
+main > section:first-child{
+    text-align: center;
+    padding: 48px 0;
+}
+
+main > section:first-child img{
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 32px;
+}
