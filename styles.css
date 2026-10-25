@@ -93,3 +93,16 @@ main > section:first-child img{
     border-radius: 16px;
     margin-bottom: 32px;
 }
+
+main > section:first-child h1{
+    font-size: 2.8rem;
+    color: var(--text-primary);
+    margin-bottom: 32px;
+}
+
+main > section:first-child p{
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
