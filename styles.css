@@ -224,7 +224,7 @@ body > footer{
         gap: 12px;
     }
 
-    sectoin > footer{
+    section > footer{
         grid-template-columns: 1fr;
     }
 
