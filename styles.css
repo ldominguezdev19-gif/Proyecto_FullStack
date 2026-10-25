@@ -117,3 +117,29 @@ form{
     border: 1px solid var(--border);
     border-radius: 12px;
 }
+
+form svg{
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+form input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+}
+
+form button{
+    padding: 10px 24px;
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--primary-hover);
+}
