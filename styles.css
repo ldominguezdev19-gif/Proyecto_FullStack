@@ -19,6 +19,11 @@
     --input-bg: #f1f5fd;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     font-family: sans-serif;
     background-color: var(--background);
@@ -58,7 +63,7 @@ body > header h2{
 
 body > header nav{
     display: flex;
-    gap: 24px
+    gap: 1.5rem;
 }
 
 body > header nav a:hover{
@@ -204,6 +209,8 @@ body > footer{
     border-top: 1px solid var(--border);
     color: var(--text-muted);
 }
+
+/*Diseño Responsivo*/
 
 @media (max-width: 768px){
     body > header{
