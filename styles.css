@@ -325,6 +325,29 @@ body > footer{
   background-color: var(--primary-hover);
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.pagination a{
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: var(--primary);
+}
+
+.pagination a:hover{
+  border-color: var(--primary);
+}
+
+.pagination a.active{
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
