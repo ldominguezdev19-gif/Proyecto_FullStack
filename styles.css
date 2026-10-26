@@ -243,6 +243,23 @@ body > footer{
   color: var(--text-primary);
 }
 
+.filter{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter select{
+  padding: 0.5rem 1rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
