@@ -260,6 +260,71 @@ body > footer{
   cursor: pointer;
 }
 
+.filter select:hover{
+  border-color: var(--primary);
+}
+
+.results h2{
+  margin-bottom: 1rem;
+}
+
+.jobs-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.job-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.job-card:hover{
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.job-title{
+  margin-bottom: 0.25rem;
+}
+
+.job-meta{
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.job-location{
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.job-description{
+  color: var(--text-muted);
+}
+
+.job-apply{
+  flex-shrink: 0;
+  padding: 10px 24px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.job-apply:hover{
+  background-color: var(--primary-hover);
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
