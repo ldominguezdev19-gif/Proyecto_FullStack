@@ -264,6 +264,10 @@ body > footer{
   border-color: var(--primary);
 }
 
+.results{
+  padding-bottom: 3rem;
+}
+
 .results h2{
   margin-bottom: 1rem;
 }
@@ -329,7 +333,7 @@ body > footer{
   display: flex;
   justify-content: center;
   gap: 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .pagination a{
