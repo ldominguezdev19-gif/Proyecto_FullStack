@@ -352,6 +352,14 @@ body > footer{
   color: #ffffff;
 }
 
+.job-apply {
+  &.is-applied{
+    background-color: #15803d;
+    pointer-events: none;
+  }
+
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
