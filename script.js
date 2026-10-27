@@ -1,7 +1,10 @@
-const boton = document.querySelector("#btn-aplicar")
+const botones = document.querySelectorAll(".job-apply")
 
-boton.addEventListener('click', function() {
-  boton.textContent = '¡Aplicado!'
-  boton.classList.add("is-applied")
-  boton.disabled = true
+botones.forEach(boton => {
+  boton.addEventListener('click', function() {
+    boton.textContent = '¡Aplicado!'
+    boton.classList.add("is-applied")
+    boton.disabled = true
+  })
 })
+
