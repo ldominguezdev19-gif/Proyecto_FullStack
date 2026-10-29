@@ -369,6 +369,16 @@ body > footer{
   border-radius: 12px;
 }
 
+.job-detail-header .job-location{
+  padding-left: 0;
+  border-left: none;
+}
+
+.job-detail-header .job-location::before{
+  content: "\00b7";
+  margin-right: 0.75rem;
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
