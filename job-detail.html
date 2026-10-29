@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oferta</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-      <header>
-      <h2>DevSearch</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oferta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DevSearch</h1>
       <nav>
         <a href="index.html">Inicio</a>
         <a href="/empleos.html">Empleos</a>
@@ -20,16 +20,38 @@
       </div>
     </header>
 
-    <div class="job-detail">
-      <h2>Ingeniero de Software Senior</h2>
-      <span>Tech Solutions INC</span>
-      <span>Remoto</span>
-      <button class="job-apply"  id="btn-aplicar">Aplicar</button>
+    <main>
+      <nav class="breadcrumb">
+        <a href="empleos.html">Empleos</a>
+        <span>Ingeniero de Software Senior</span>
+      </nav>
+      <article class="job-detail">
+        <header class="job-detail-header">
+          <div>
+            <h1>Ingeniero de Software Senior</h1>
+            <p class="job-meta">
+              <span class="job-company">Tech Solutions INC</span>
+              <span class="job-location">Remoto</span>
+            </p>
+          </div>
+          <button class="job-apply">Aplicar</button>
+        </header>
 
-      <h3>Descripción del Puesto</h3>
-      <p>Tech Solutions Inc. esta buscando un ingeniero de SOftware Senior altamente motivado y experimentado para unirse a nuestro equipo remoto. El candidato ideal tendrá un asólida formación en desarrollo de software, con experiencia en el diseño, desarrollo e implementación de soluciones de software escalables y de alto rendimiento. Como ingeniero de Software Senior, usted será responsable de liderar proyectos de desarrollo, mentorizara ingenieros junior y colaborar con equipos multifuncionales para entregar productos de software de alta calidad.</p>
-
-    </div>
-
-</body>
+        <section class="job-detail-section">
+          <h2>Descripción del Puesto</h2>
+          <p>
+            Tech Solutions Inc. esta buscando un ingeniero de SOftware Senior
+            altamente motivado y experimentado para unirse a nuestro equipo
+            remoto. El candidato ideal tendrá un asólida formación en desarrollo
+            de software, con experiencia en el diseño, desarrollo e
+            implementación de soluciones de software escalables y de alto
+            rendimiento. Como ingeniero de Software Senior, usted será
+            responsable de liderar proyectos de desarrollo, mentorizara
+            ingenieros junior y colaborar con equipos multifuncionales para
+            entregar productos de software de alta calidad.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
