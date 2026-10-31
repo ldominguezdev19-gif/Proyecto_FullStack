@@ -441,6 +441,12 @@ body > footer{
   border-top: 1px solid var(--border);
 }
 
+.sin-resultados{
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-muted);
+}
+
 /*Diseño Responsivo*/
 @media (max-width: 768px){
     body > header{
