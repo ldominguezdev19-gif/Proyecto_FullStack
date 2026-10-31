@@ -1,13 +1,16 @@
 //Aqui guardo la lista completa de ofertas
 let empleos = []
 
-//Guardo el select de tecnologia
+//Guardo el select cde todos los filtros usados
 const selectTecnologia = document.querySelector('#technology')
+const selectUbicacion = document.querySelector('#location')
+const selectContrato = document.querySelector('#contract')
+const selectNivel = document.querySelector('#experience')
 
 
 // Guardo el contenedor donde van a aparecer las tarjetas de empleos
 const listaEmpleos = document.querySelector(".jobs-list");
-
+const contenedorFiltros = document.querySelector('.filter')
 
 // Recibe una lista de ofertas y las dibuja en la pagina.
 // Recibe la lista como parametro para poder usarla tambien con ofertas filtradas
