@@ -65,14 +65,22 @@ fetch("data.json")
 //Revisa que eligio el usuario y pinta solo las ofertas que coinciden
 function filtrarEmpleos (){
   const tecnologia = selectTecnologia.value
+  const ubicacion = selectUbicacion.value
+  const contrato = selectContrato.value
+  const nivel = selectNivel.value
 
   const resultado = empleos.filter(function(empleo){
-    //Pasa si no eligio nada, o si la tecnologia de la oferta es la que eligio
-    return tecnologia === '' || empleo.tecnologia === tecnologia
+    //Pasa si no eligio nada, o si la oferta es la que eligio
+    const coincideTecnologia = tecnologia === '' || empleo.tecnologia === tecnologia
+    const coincideUbicacion = ubicacion === '' || empleo.ubicacion === ubicacion
+    const coincideContrato = contrato === '' || empleo.contrato === contrato
+    const coincideNivel = nivel === '' || empleo.nivel === nivel
+
+    return coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel
   })
 
   pintarEmpleos(resultado)
 }
 
 //Cada vez que el usuario elige otra opcion vuelve a filtrar
-selectTecnologia.addEventListener('change', filtrarEmpleos)
+contenedorFiltros.addEventListener('change', filtrarEmpleos)
