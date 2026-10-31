@@ -37,5 +37,5 @@ fetch("data.json")
     return respuesta.json();
   })
   .then(function (datos) {
-    console.log(datos);
+    pintarEmpleos(datos);
   });
