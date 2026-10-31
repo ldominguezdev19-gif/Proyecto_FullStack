@@ -7,7 +7,11 @@ const selectUbicacion = document.querySelector('#location')
 const selectContrato = document.querySelector('#contract')
 const selectNivel = document.querySelector('#experience')
 const inputBuscador = document.getElementById('search')
+const formularioBusqueda = document.querySelector('.search-form')
 
+formularioBusqueda.addEventListener('submit', function (event){
+  event.preventDefault()
+})
 
 // Guardo el contenedor donde van a aparecer las tarjetas de empleos
 const listaEmpleos = document.querySelector(".jobs-list");
@@ -78,7 +82,13 @@ function filtrarEmpleos (){
     const coincideContrato = contrato === '' || empleo.contrato === contrato
     const coincideNivel = nivel === '' || empleo.nivel === nivel
 
-    return coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel
+    
+
+    const coincideTexto = 
+      empleo.titulo.toLowerCase().includes(textoBusqueda) || empleo.tecnologia.toLowerCase().includes(textoBusqueda)
+    
+    return coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel && coincideTexto
+
   })
 
   pintarEmpleos(resultado)
@@ -86,3 +96,4 @@ function filtrarEmpleos (){
 
 //Cada vez que el usuario elige otra opcion vuelve a filtrar
 contenedorFiltros.addEventListener('change', filtrarEmpleos)
+inputBuscador.addEventListener('input', filtrarEmpleos)
