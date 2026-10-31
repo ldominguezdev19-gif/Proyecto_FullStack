@@ -1,8 +1,14 @@
+// Guardo el contenedor donde van a aparecer las tarjetas de empleos
 const listaEmpleos = document.querySelector(".jobs-list");
 
+
+// Recibe una lista de ofertas y las dibuja en la pagina.
+// Recibe la lista como parametro para poder usarla tambien con ofertas filtradas
 function pintarEmpleos(lista) {
+  // Aqui voy a ir acumulando el HTML de todas las tarjetas
   let html = "";
 
+  //Recorro la lista: en cada vuelta y cada empleo es una oferta distinta
   lista.forEach(function (empleo) {
     html =
       html +
@@ -29,13 +35,17 @@ function pintarEmpleos(lista) {
       "</article>";
   });
 
+  //Meto todas las tarjetas de una vez dentro del contenedor
   listaEmpleos.innerHTML = html
 }
 
+//Pido el archivo con los datos de las ofertas
 fetch("data.json")
   .then(function (respuesta) {
+    //Convierto la respuesta en un arreglo que JavaScrip pueda usar
     return respuesta.json();
   })
   .then(function (datos) {
+    //Cuando los datos ya llegaron, dibujo las ofertas
     pintarEmpleos(datos);
   });
