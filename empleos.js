@@ -1,3 +1,10 @@
+//Aqui guardo la lista completa de ofertas
+let empleos = []
+
+//Guardo el select de tecnologia
+const selectTecnologia = document.querySelector('#technology')
+
+
 // Guardo el contenedor donde van a aparecer las tarjetas de empleos
 const listaEmpleos = document.querySelector(".jobs-list");
 
@@ -46,6 +53,19 @@ fetch("data.json")
     return respuesta.json();
   })
   .then(function (datos) {
+    empleos = datos
     //Cuando los datos ya llegaron, dibujo las ofertas
     pintarEmpleos(datos);
   });
+
+function filtrarEmpleos (){
+  const tecnologia = selectTecnologia.value
+
+  const resultado = empleos.filter(function(empleo){
+    return tecnologia === '' || empleo.tecnologia === tecnologia
+  })
+
+  pintarEmpleos(resultado)
+}
+
+selectTecnologia.addEventListener('change', filtrarEmpleos)
