@@ -20,6 +20,12 @@ const contenedorFiltros = document.querySelector('.filter')
 // Recibe una lista de ofertas y las dibuja en la pagina.
 // Recibe la lista como parametro para poder usarla tambien con ofertas filtradas
 function pintarEmpleos(lista) {
+  
+  if(lista.length === 0){
+    listaEmpleos.innerHTML = '<p class="sin-resultados">No se encontraron ofertas con esos filtros.</p>'
+    return
+  }
+  
   // Aqui voy a ir acumulando el HTML de todas las tarjetas
   let html = "";
 
