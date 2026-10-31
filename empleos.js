@@ -6,6 +6,7 @@ const selectTecnologia = document.querySelector('#technology')
 const selectUbicacion = document.querySelector('#location')
 const selectContrato = document.querySelector('#contract')
 const selectNivel = document.querySelector('#experience')
+const inputBuscador = document.getElementById('search')
 
 
 // Guardo el contenedor donde van a aparecer las tarjetas de empleos
@@ -68,6 +69,7 @@ function filtrarEmpleos (){
   const ubicacion = selectUbicacion.value
   const contrato = selectContrato.value
   const nivel = selectNivel.value
+  const textoBusqueda = document.getElementById('search').value.toLowerCase().trim()
 
   const resultado = empleos.filter(function(empleo){
     //Pasa si no eligio nada, o si la oferta es la que eligio
