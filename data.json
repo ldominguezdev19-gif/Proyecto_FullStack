@@ -1,182 +1,172 @@
 [
   {
-    "id": "7a4d1d8b-1e45-4d8c-9f1a-8c2f9a9121a4",
-    "titulo": "Desarrollador de Software Senior",
+    "id": 1,
+    "titulo": "Ingeniero de Software Senior",
     "empresa": "Tech Solutions Inc.",
-    "ubicacion": "Remoto",
-    "descripcion": "Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.",
-    "data": {
-      "technology": ["react", "node", "javascript"],
-      "modalidad": "remoto",
-      "nivel": "senior"
-    }
+    "ubicacion": "remoto",
+    "tecnologia": "javascript",
+    "contrato": "tiempo-completo",
+    "nivel": "senior",
+    "descripcion": "Buscamos un ingeniero de software con experiencia en JavaScript, React y Node.js para liderar proyectos de desarrollo.",
+    "responsabilidades": [
+      "Diseñar, desarrollar y mantener aplicaciones web utilizando tecnologías modernas.",
+      "Colaborar con equipos de producto y diseño para definir y entregar nuevas características.",
+      "Escribir código limpio, eficiente y bien documentado.",
+      "Realizar revisiones de código y proporcionar retroalimentación constructiva a los miembros del equipo."
+    ],
+    "requisitos": [
+      "Licenciatura en Informática o campo relacionado.",
+      "Mínimo de 5 años de experiencia en desarrollo de software.",
+      "Experiencia con frameworks de JavaScript (por ejemplo, React, Angular y Vue.js).",
+      "Familiaridad con metodologías ágiles y herramientas de control de versiones."
+    ],
+    "acerca": "Tech Solutions Inc. es una empresa de tecnología innovadora que se centra en la creación de soluciones de software de vanguardia para diversas industrias."
   },
   {
-    "id": "d35b2c89-5d60-4f26-b19a-6cfb2f1a0f57",
+    "id": 2,
+    "titulo": "Desarrollador Frontend React",
+    "empresa": "Pixel Labs",
+    "ubicacion": "barranquilla",
+    "tecnologia": "react",
+    "contrato": "tiempo-completo",
+    "nivel": "junior",
+    "descripcion": "Únete a nuestro equipo de producto para construir interfaces claras y rápidas con React.",
+    "responsabilidades": [
+      "Construir componentes reutilizables con React.",
+      "Convertir diseños de Figma en páginas funcionales.",
+      "Corregir errores y mejorar el rendimiento de la interfaz."
+    ],
+    "requisitos": [
+      "Conocimientos sólidos de HTML, CSS y JavaScript.",
+      "Experiencia básica con React y Git.",
+      "Ganas de aprender y trabajar en equipo."
+    ],
+    "acerca": "Pixel Labs es un estudio de producto digital de Barranquilla que crea aplicaciones web para empresas de la región."
+  },
+  {
+    "id": 3,
+    "titulo": "Desarrollador Backend Node.js",
+    "empresa": "Cloud Services SA",
+    "ubicacion": "remoto",
+    "tecnologia": "node.js",
+    "contrato": "freelance",
+    "nivel": "semi-senior",
+    "descripcion": "Buscamos un desarrollador backend para crear y mantener APIs REST con Node.js y bases de datos relacionales.",
+    "responsabilidades": [
+      "Diseñar y desarrollar APIs REST seguras y documentadas.",
+      "Conectar los servicios con bases de datos SQL.",
+      "Escribir pruebas y mantener la calidad del código."
+    ],
+    "requisitos": [
+      "Experiencia de 3 años con Node.js y Express.",
+      "Conocimientos de SQL y diseño de bases de datos.",
+      "Capacidad para trabajar de forma autónoma."
+    ],
+    "acerca": "Cloud Services SA ofrece soluciones en la nube para empresas que quieren modernizar sus sistemas."
+  },
+  {
+    "id": 4,
     "titulo": "Analista de Datos",
     "empresa": "Data Driven Co.",
-    "ubicacion": "Barranquilla",
-    "descripcion": "Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.",
-    "data": {
-      "technology": "python",
-      "modalidad": "Barranquilla",
-      "nivel": "junior"
-    }
+    "ubicacion": "bogota",
+    "tecnologia": "python",
+    "contrato": "tiempo-completo",
+    "nivel": "semi-senior",
+    "descripcion": "Buscamos un analista de datos con experiencia en Python y SQL para convertir datos en decisiones de negocio.",
+    "responsabilidades": [
+      "Limpiar y analizar grandes conjuntos de datos con Python.",
+      "Crear informes y visualizaciones para el equipo directivo.",
+      "Definir indicadores clave junto con las áreas de negocio."
+    ],
+    "requisitos": [
+      "Experiencia con Python, Pandas y SQL.",
+      "Conocimientos de estadística básica.",
+      "Habilidad para comunicar resultados de forma clara."
+    ],
+    "acerca": "Data Driven Co. ayuda a empresas medianas a tomar mejores decisiones usando analítica de datos."
   },
   {
-    "id": "e31f9a92-61d7-4b7a-b3a2-91e8c1f40b2d",
-    "titulo": "Desarrollador de Aplicaciones Móviles",
+    "id": 5,
+    "titulo": "Desarrollador C# .NET",
     "empresa": "Mobile Apps Ltd.",
-    "ubicacion": "Bogotá",
-    "descripcion": "Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "Bogotá",
-      "nivel": "mid-level"
-    }
+    "ubicacion": "medellin",
+    "tecnologia": "csharp",
+    "contrato": "medio-tiempo",
+    "nivel": "junior",
+    "descripcion": "Estamos buscando un desarrollador con bases en C# para apoyar el desarrollo de aplicaciones empresariales.",
+    "responsabilidades": [
+      "Desarrollar y mantener módulos de aplicaciones en C#.",
+      "Apoyar al equipo en la corrección de errores.",
+      "Participar en reuniones de planeación y revisión."
+    ],
+    "requisitos": [
+      "Conocimientos de C# y programación orientada a objetos.",
+      "Nociones de SQL Server.",
+      "Disponibilidad de medio tiempo."
+    ],
+    "acerca": "Mobile Apps Ltd. desarrolla aplicaciones móviles y de escritorio para clientes en toda Latinoamérica."
   },
   {
-    "id": "f62d8a34-923a-4ac2-9b0b-14e0ac2f5405",
-    "titulo": "Ingeniero de DevOps",
+    "id": 6,
+    "titulo": "Practicante de Desarrollo Web",
+    "empresa": "Startup Caribe",
+    "ubicacion": "barranquilla",
+    "tecnologia": "javascript",
+    "contrato": "practicas",
+    "nivel": "junior",
+    "descripcion": "Prácticas para estudiantes de últimos semestres que quieran aprender desarrollo web en un equipo real.",
+    "responsabilidades": [
+      "Apoyar el desarrollo de páginas con HTML, CSS y JavaScript.",
+      "Aprender el flujo de trabajo con Git y revisiones de código.",
+      "Documentar las tareas realizadas."
+    ],
+    "requisitos": [
+      "Ser estudiante de Ingeniería de Sistemas o carreras afines.",
+      "Conocimientos básicos de HTML, CSS y JavaScript.",
+      "Actitud proactiva y ganas de aprender."
+    ],
+    "acerca": "Startup Caribe es una empresa joven que crea productos digitales para el sector turismo y comercio."
+  },
+  {
+    "id": 7,
+    "titulo": "Ingeniero DevOps",
     "empresa": "Cloud Services SA",
-    "ubicacion": "Remoto",
-    "descripcion": "Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "remoto",
-      "nivel": "mid-level"
-    }
+    "ubicacion": "remoto",
+    "tecnologia": "aws",
+    "contrato": "tiempo-completo",
+    "nivel": "senior",
+    "descripcion": "Buscamos un ingeniero DevOps con experiencia en infraestructura en la nube, automatización e integración continua.",
+    "responsabilidades": [
+      "Administrar la infraestructura en AWS.",
+      "Automatizar despliegues con pipelines de integración continua.",
+      "Monitorear los servicios y responder a incidentes."
+    ],
+    "requisitos": [
+      "Más de 5 años de experiencia en DevOps.",
+      "Dominio de AWS, Docker y Linux.",
+      "Experiencia con herramientas de CI/CD."
+    ],
+    "acerca": "Cloud Services SA ofrece soluciones en la nube para empresas que quieren modernizar sus sistemas."
   },
   {
-    "id": "a9f31a8e-ec38-4fd3-9114-88cc6d37a92b",
-    "titulo": "Diseñador UX/UI",
-    "empresa": "Creative Minds Studio",
-    "ubicacion": "Medellin",
-    "descripcion": "Estamos buscando un diseñador UX/UI con pasión por crear experiencias digitales excepcionales. Se requiere experiencia en Figma, diseño centrado en el usuario y colaboración con equipos de desarrollo.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "medellin",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "c1b65b42-68c5-4f1c-a8c2-8d52c5a7a5d1",
+    "id": 8,
     "titulo": "Administrador de Bases de Datos",
-    "empresa": "Secure Data Corp.",
-    "ubicacion": "Buenos Aires",
-    "descripcion": "Se busca un administrador de bases de datos con experiencia en PostgreSQL y MySQL. El candidato deberá asegurar la disponibilidad, seguridad y rendimiento de las bases de datos de producción.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "bsas",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "bb8f2a99-6a20-4f9e-912a-16f54a49b8c3",
-    "titulo": "Especialista en Ciberseguridad",
-    "empresa": "SafeNet Solutions",
-    "ubicacion": "Remoto",
-    "descripcion": "Buscamos un especialista en ciberseguridad con conocimientos en protección de infraestructuras, análisis de vulnerabilidades y respuesta ante incidentes. Se valorará experiencia con SIEM y certificaciones de seguridad.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "remoto",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "fe7b2c54-4f47-4e2b-9e87-2b5413a6b24f",
-    "titulo": "Product Manager",
-    "empresa": "NextGen Technologies",
-    "ubicacion": "Madrid",
-    "descripcion": "Estamos buscando un Product Manager con experiencia en la definición y lanzamiento de productos digitales. Se requiere capacidad analítica, liderazgo y conocimiento en metodologías ágiles.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "madrid",
-      "nivel": "senior"
-    }
-  },
-  {
-    "id": "a71f7a92-56d9-4b42-9f16-cb29b40e5f2c",
-    "titulo": "Frontend Developer",
-    "empresa": "Bright Web Studio",
-    "ubicacion": "Valencia",
-    "descripcion": "Buscamos un desarrollador frontend con experiencia en React, TypeScript y Tailwind CSS. Se valorará conocimiento en optimización de rendimiento y accesibilidad web.",
-    "data": {
-      "technology": "react",
-      "modalidad": "valencia",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "f91e4c7b-3840-43da-8ad7-3a52e2a8cf1d",
-    "titulo": "Backend Developer",
-    "empresa": "APIWorks",
-    "ubicacion": "Bogotá",
-    "descripcion": "Estamos buscando un desarrollador backend con experiencia en Node.js, Express y bases de datos NoSQL. Se requiere conocimiento en arquitectura de microservicios.",
-    "data": {
-      "technology": "node",
-      "modalidad": "bogota",
-      "nivel": "mid"
-    }
-  },
-  {
-    "id": "b65a3c9f-b174-4d86-b8a2-9cf9b1e13a22",
-    "titulo": "Ingeniero de Machine Learning",
-    "empresa": "AI Labs",
-    "ubicacion": "Remoto",
-    "descripcion": "Buscamos un ingeniero de machine learning con experiencia en modelos de predicción y procesamiento de datos. Se valorará conocimiento en TensorFlow, PyTorch y MLOps.",
-    "data": {
-      "technology": "python",
-      "modalidad": "remoto",
-      "nivel": "senior"
-    }
-  },
-  {
-    "id": "e8d13c45-36cb-46cf-8f9d-8a0a7b532b8b",
-    "titulo": "QA Automation Engineer",
-    "empresa": "Quality First",
-    "ubicacion": "Lima",
-    "descripcion": "Se busca ingeniero de QA con experiencia en automatización de pruebas utilizando herramientas como Selenium, Cypress o Playwright. Conocimiento deseado en CI/CD.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "lima",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "d2e93b8a-0b41-4d09-9a52-36a0f418d493",
-    "titulo": "Administrador de Sistemas",
-    "empresa": "InfraTech Global",
-    "ubicacion": "Santiago de Chile",
-    "descripcion": "Buscamos un administrador de sistemas con experiencia en Linux, Docker y monitoreo de servidores. Conocimiento en scripting Bash o Python será un plus.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "santiago",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "cc0c1fae-4e85-4e2c-9b02-f12f9df8a2c9",
-    "titulo": "Scrum Master",
-    "empresa": "Agile Minds",
-    "ubicacion": "Madrid",
-    "descripcion": "Estamos buscando un Scrum Master con experiencia en metodologías ágiles y gestión de equipos multidisciplinarios. Certificación Scrum Master deseable.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "madrid",
-      "nivel": "mid-level"
-    }
-  },
-  {
-    "id": "a2f1d8c6-b72c-45f5-bcc5-5c1d1f39b0b1",
-    "titulo": "Soporte Técnico Nivel 2",
-    "empresa": "HelpDesk Pro",
-    "ubicacion": "Monterrey",
-    "descripcion": "Buscamos un técnico de soporte con habilidades en resolución de incidencias, redes y sistemas operativos. Se requiere atención al detalle y excelente trato con el usuario.",
-    "data": {
-      "technology": "mobile",
-      "modalidad": "monterrey",
-      "nivel": "junior"
-    }
+    "empresa": "Banco Andino",
+    "ubicacion": "bogota",
+    "tecnologia": "sql",
+    "contrato": "tiempo-completo",
+    "nivel": "semi-senior",
+    "descripcion": "Buscamos un administrador de bases de datos para garantizar la disponibilidad y el rendimiento de nuestros sistemas.",
+    "responsabilidades": [
+      "Administrar y optimizar bases de datos SQL.",
+      "Realizar copias de seguridad y planes de recuperación.",
+      "Apoyar a los equipos de desarrollo con consultas complejas."
+    ],
+    "requisitos": [
+      "Experiencia de 3 años administrando bases de datos SQL.",
+      "Conocimientos de optimización de consultas.",
+      "Manejo de buenas prácticas de seguridad de la información."
+    ],
+    "acerca": "Banco Andino es una entidad financiera con presencia en varias ciudades del país y un fuerte enfoque en tecnología."
   }
 ]
