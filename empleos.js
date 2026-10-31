@@ -83,19 +83,19 @@ function filtrarEmpleos (){
     const coincideNivel = nivel === '' || empleo.nivel === nivel
 
     
+    //Junto los campos de la oferta en un solo texto, en minusculas
+    const textoOferta = (
+      empleo.titulo + '' +
+      empleo.tecnologia + '' +
+      empleo.ubicacion + '' +
+      empleo.contrato + '' +
+      empleo.nivel + ''
+    ).toLowerCase()
 
-    const coincideTexto = 
-      empleo.titulo.toLowerCase().includes(textoBusqueda) || 
-      empleo.tecnologia.toLowerCase().includes(textoBusqueda) || 
-      empleo.ubicacion.toLowerCase().includes(textoBusqueda) ||
-      empleo.contrato.toLowerCase().includes(textoBusqueda) ||
-      empleo.nivel.toLowerCase().includes(textoBusqueda)
+    const coincideTexto = textoOferta.includes(textoBusqueda)
 
-    
     return coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel && coincideTexto
-
   })
-
   pintarEmpleos(resultado)
 }
 
