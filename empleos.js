@@ -85,7 +85,12 @@ function filtrarEmpleos (){
     
 
     const coincideTexto = 
-      empleo.titulo.toLowerCase().includes(textoBusqueda) || empleo.tecnologia.toLowerCase().includes(textoBusqueda)
+      empleo.titulo.toLowerCase().includes(textoBusqueda) || 
+      empleo.tecnologia.toLowerCase().includes(textoBusqueda) || 
+      empleo.ubicacion.toLowerCase().includes(textoBusqueda) ||
+      empleo.contrato.toLowerCase().includes(textoBusqueda) ||
+      empleo.nivel.toLowerCase().includes(textoBusqueda)
+
     
     return coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel && coincideTexto
 
