@@ -1,14 +1,30 @@
 class DevSearchAvatar extends HTMLElement {
-  connectedCallback(){
-    const usuario = this.getAttribute('usuario')
-    const proveedor = this.getAttribute('proveedor') ||'github'
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    const img = document.createElement('img')
-    img.src = 'https://unavatar.io/' + proveedor + '/' + usuario
-    img.alt = 'foto de' + usuario
+  connectedCallback() {
+    this.render();
+  }
 
-    this.appendChild(img)
+  render() {
+    const usuario = this.getAttribute("usuario");
+    const proveedor = this.getAttribute("proveedor") || "github";
+    const nombre = this.getAttribute("nombre") || usuario;
+
+    this.shadowRoot.innerHTML = `
+    <style>
+    img{
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    </style>
+    <img src = "https://unavatar.io/${proveedor}/${usuario}" alt="Foto de ${nombre}">
+    `;
   }
 }
 
-customElements.define('devsearch-avatar', DevSearchAvatar)
+customElements.define("devsearch-avatar", DevSearchAvatar);
