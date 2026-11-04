@@ -63,6 +63,12 @@ body > header{
     gap: 2rem;
 }
 
+body > header div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 body > header h2{
     color: var(--primary);
 }
