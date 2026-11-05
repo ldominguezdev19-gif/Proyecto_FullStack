@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="Listado con empleos y filtros para encontrar el trabajo de tus sueños."
+    />
+    <title>DevSearch - Empleos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module">
+      import React from "https://esm.sh/react?dev"
+      import ReactDOM from "https://esm.sh/react-dom/client?dev"
+
+      const titulo = React.createElement(
+        "h1",
+        {style: {color: "#09f"}},
+        "Hola, react.js"
+      )
+
+      const rootEl = document.querySelector('#root');
+      const root = ReactDOM.createRoot(rootEl)
+
+      root.render(titulo)
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2>DevSearch</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="/empleos.html">Empleos</a>
+      </nav>
+
+      <div>
+        <a href="">Publicar un empleo</a>
+        <a href="">Iniciar sesión</a>
+        <devsearch-avatar proveedor="github" usuario="ldominguezdev19-gif"></devsearch-avatar>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h1>react.js, primero pasos
+        </h1>
+
+        <div id="root"></div>
+      </section>
+    </main>
+    
+    <footer>
+      <small>&copy; 2026 DevSearch. Todos los derechos reservados</small>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+    <script type="module" src="/empleos.js"></script>
+    <script src="saludo.js"></script>
+  </body>
+</html>
