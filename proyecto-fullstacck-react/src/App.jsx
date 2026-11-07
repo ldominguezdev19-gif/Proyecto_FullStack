@@ -2,6 +2,18 @@ function App() {
 
   return (
     <>
+    <header>
+        <h2>DevSearch</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="empleos.html">Empleos</a>
+        </nav>
+
+        <div>
+            <a href="">Publicar un empleo</a>
+            <a href="">Iniciar sesión</a>
+        </div>
+    </header>
     <main>
       <section class="search-section">
         <h1>Encuentra tu proximo trabajo</h1>
