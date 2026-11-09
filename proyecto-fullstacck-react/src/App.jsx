@@ -1,4 +1,5 @@
 import JobCard from "./assets/components/JobCard"
+import empleos from "./data.json"
 
 function App() {
 
@@ -88,8 +89,15 @@ function App() {
         <h2>Resultados de busqueda</h2>
 
         <div className="jobs-list">
-            <JobCard titulo="Frontend Developer"/>
-            <JobCard titulo="Ingenierdo de Datos"/>
+            {empleos.map(empleo =>(
+              <JobCard
+                key={empleo.id}
+                titulo={empleo.titulo}
+                empresa={empleo.empresa}
+                ubicacion={empleo.ubicacion}
+                descripcion={empleo.descripcion}
+              />
+            ))}
         </div>
 
         <nav class="pagination">
