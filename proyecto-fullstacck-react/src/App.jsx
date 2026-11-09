@@ -1,3 +1,5 @@
+import JobCard from "./assets/components/JobCard"
+
 function App() {
 
   return (
@@ -86,43 +88,7 @@ function App() {
         <h2>Resultados de busqueda</h2>
 
         <div class="jobs-list">
-            <article class="job-card">
-                <div class="job-info">
-                    <h3 class="job-title">
-                      <a href="job-detail.html">ingeniero de Software Senior</a>
-                    </h3>
-                    <p class="job-meta">
-                        <span class="job-company">Tech Solutions Inc.</span>
-                        <span class="job-location">Remoto</span>
-                    </p>
-                    <p class="job-description">Buscamos un ingeniero de software con experiencia en JavaScript, React y Node.js.</p>
-                </div>
-                <button class="job-apply"  id="btn-aplicar">Aplicar</button>
-            </article>
-
-            <article class="job-card">
-                <div class="job-info">
-                    <h3 class="job-title">Ingeniero de Software</h3>
-                    <p class="job-meta">
-                        <span class="job-company">Solutions Inc.</span>
-                        <span class="job-location">Barranquilla</span>
-                    </p>
-                    <p class="job-description">Buscamos un ingeniero de software con experiencia en JavaScript, React y Node.js.</p>
-                </div>
-                <button class="job-apply" id="btn-aplicar">Aplicar</button>
-            </article>
-
-            <article class="job-card">
-                <div class="job-info">
-                    <h3 class="job-title">Ingeniero de Software</h3>
-                    <p class="job-meta">
-                        <span class="job-company">Tech Solutions Inc.</span>
-                        <span class="job-location">Bogotá</span>
-                    </p>
-                    <p class="job-description">Buscamos un ingeniero de software con experiencia en JavaScript, React y Node.js.</p>
-                </div>
-                <button class="job-apply" id="btn-aplicar">Aplicar</button>
-            </article>
+            <JobCard/>
         </div>
 
         <nav class="pagination">
