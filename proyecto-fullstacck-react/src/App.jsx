@@ -88,7 +88,8 @@ function App() {
         <h2>Resultados de busqueda</h2>
 
         <div className="jobs-list">
-            <JobCard/>
+            <JobCard titulo="Frontend Developer"/>
+            <JobCard titulo="Ingenierdo de Datos"/>
         </div>
 
         <nav class="pagination">

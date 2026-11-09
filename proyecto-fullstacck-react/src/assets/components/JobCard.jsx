@@ -1,9 +1,9 @@
-function JobCard () {
+function JobCard (props) {
   return ( 
             <article className="job-card">
                 <div className="job-info">
                     <h3 className="job-title">
-                      <a href="job-detail.html">ingeniero de Software Senior</a>
+                      <a href="job-detail.html">{props.titulo}</a>
                     </h3>
                     <p className="job-meta">
                         <span className="job-company">Tech Solutions Inc.</span>
