@@ -87,7 +87,7 @@ function App() {
       <section class="results">
         <h2>Resultados de busqueda</h2>
 
-        <div class="jobs-list">
+        <div className="jobs-list">
             <JobCard/>
         </div>
 
