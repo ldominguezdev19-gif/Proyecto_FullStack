@@ -1,10 +1,10 @@
 function SearchSection (){
   return (
-    <section class="search-section">
+    <section className="search-section">
         <h1>Encuentra tu proximo trabajo</h1>
         <p>Explora miles de oportunidades en el sector tecnologico.</p>
 
-        <form role="search" class="search-form">
+        <form role="search-form" className="search-form">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -15,7 +15,7 @@ function SearchSection (){
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+            className="icon icon-tabler icons-tabler-outline icon-tabler-search"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -30,7 +30,7 @@ function SearchSection (){
           />
         </form>
 
-        <div class="filter">
+        <div className="filter">
           <select name="technology" id="technology">
             <option value="">Tecnología</option>
             <option value="javascript">JavaScript</option>
