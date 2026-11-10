@@ -53,7 +53,7 @@ h1 + p{
     margin-bottom: 2rem;
 }
 
-body > header{
+.site-header{
     border-bottom: 1px solid var(--border);
     background: var(--background);
     padding: .5rem 1rem;
@@ -63,38 +63,38 @@ body > header{
     gap: 2rem;
 }
 
-body > header div{
+.site-header {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-body > header h2{
+.site-header {
     color: var(--primary);
 }
 
-body > header nav{
+.site-header {
     display: flex;
     gap: 1.5rem;
 }
 
-body > header nav a:hover{
+.site-header nav a:hover{
     color: var(--primary);
 }
 
-body > header div a{
+.site-header div a{
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid var(--primary);
     color: var(--primary);
 }
 
-body > header div a:last-child{
+.site-header div a:last-child{
     background-color: var(--primary);
     color: #ffffff;
 }
 
-body > header div a:last-child:hover{
+.site-header > header div a:last-child:hover{
     background-color: var(--primary-hover);
 }
 
@@ -455,7 +455,7 @@ body > footer{
 
 /*Diseño Responsivo*/
 @media (max-width: 768px){
-    body > header{
+    .site-header{
         flex-direction: column;
         gap: 12px;
     }

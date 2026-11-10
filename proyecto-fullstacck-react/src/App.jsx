@@ -1,4 +1,5 @@
 import JobCard from "./assets/components/JobCard"
+import Header from "./assets/components/Header"
 import empleos from "./data.json"
 
 function App() {
@@ -6,16 +7,7 @@ function App() {
   return (
     <>
     <header>
-        <h2>DevSearch</h2>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="empleos.html">Empleos</a>
-        </nav>
-
-        <div>
-            <a href="">Publicar un empleo</a>
-            <a href="">Iniciar sesión</a>
-        </div>
+      <Header/>
     </header>
     <main>
       <section class="search-section">
