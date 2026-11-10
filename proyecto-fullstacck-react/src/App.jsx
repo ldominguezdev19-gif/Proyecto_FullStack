@@ -6,9 +6,7 @@ function App() {
 
   return (
     <>
-    <header>
       <Header/>
-    </header>
     <main>
       <section class="search-section">
         <h1>Encuentra tu proximo trabajo</h1>
