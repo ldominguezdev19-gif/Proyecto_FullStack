@@ -1,5 +1,6 @@
 import JobCard from "./assets/components/JobCard"
 import Header from "./assets/components/Header"
+import Footer from "./assets/components/Footer"
 import empleos from "./data.json"
 
 function App() {
@@ -102,9 +103,7 @@ function App() {
     
     
 
-    <footer>
-      <small>&copy; 2026 DevSearch. Todos los derechos reservados</small>
-    </footer>
+    <Footer/>
     </>
   )
 }

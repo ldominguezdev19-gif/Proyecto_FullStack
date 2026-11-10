@@ -215,7 +215,7 @@ article p{
     color: var(--text-muted);
 }
 
-body > footer{
+.site-footer{
     text-align: center;
     padding: 24px;
     border-top: 1px solid var(--border);
