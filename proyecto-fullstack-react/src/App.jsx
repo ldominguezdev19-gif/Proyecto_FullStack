@@ -3,7 +3,7 @@ import Header from "./assets/components/Header"
 import Footer from "./assets/components/Footer"
 import SearchSection from "./assets/components/SearchSection"
 import empleos from "./data.json"
-import Pagination from "./assets/components/pagination"
+import Pagination from "./assets/components/Pagination"
 import { useState } from "react"
 
 
@@ -23,7 +23,7 @@ function App() {
         <h2>Resultados de busqueda</h2>
 
         <div className="jobs-list">
-            {empleos.map(empleo =>(
+            {empleosPagina.map(empleo =>(
               <JobCard
                 key={empleo.id}
                 titulo={empleo.titulo}
@@ -34,7 +34,11 @@ function App() {
             ))}
         </div>
 
-        <Pagination/>
+        <Pagination
+          paginaActual={paginaActual}
+          totalPaginas={totalPaginas}
+          cambiarPagina={setPaginaActual}
+        />
 
       </section>
 

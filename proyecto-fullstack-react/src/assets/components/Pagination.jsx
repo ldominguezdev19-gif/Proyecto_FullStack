@@ -7,7 +7,12 @@ function Pagination ({paginaActual, totalPaginas, cambiarPagina}){
   return(
     <nav className="pagination">
           {paginas.map(pagina => (
-            <a key={pagina} href="#">{pagina}</a>
+            <a key={pagina} href="#" className={pagina === paginaActual ? "active": ""}
+            onClick={(evento) => {
+              evento.preventDefault()
+              cambiarPagina(pagina)
+            }}
+            >{pagina}</a>
           ))}
     </nav>
   )
