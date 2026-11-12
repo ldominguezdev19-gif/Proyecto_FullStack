@@ -1,9 +1,14 @@
-function Pagination (){
+function Pagination ({paginaActual, totalPaginas, cambiarPagina}){
+  const paginas = []
+
+  for (let i =1; i <= totalPaginas; i++){
+    paginas.push(i)
+  }
   return(
     <nav className="pagination">
-          <a className="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          {paginas.map(pagina => (
+            <a key={pagina} href="#">{pagina}</a>
+          ))}
     </nav>
   )
 }
