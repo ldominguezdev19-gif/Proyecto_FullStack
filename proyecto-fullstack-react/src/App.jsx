@@ -3,7 +3,7 @@ import Header from "./assets/components/Header"
 import Footer from "./assets/components/Footer"
 import SearchSection from "./assets/components/SearchSection"
 import empleos from "./data.json"
-
+import Pagination from "./assets/components/pagination"
 function App() {
 
   return (
@@ -26,11 +26,7 @@ function App() {
             ))}
         </div>
 
-        <nav class="pagination">
-          <a class="active" href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-        </nav>
+        <Pagination/>
 
       </section>
 
@@ -40,6 +36,8 @@ function App() {
 
     <Footer/>
     </>
+
+  
   )
 }
 
