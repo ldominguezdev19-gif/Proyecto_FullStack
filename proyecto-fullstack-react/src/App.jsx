@@ -4,8 +4,16 @@ import Footer from "./assets/components/Footer"
 import SearchSection from "./assets/components/SearchSection"
 import empleos from "./data.json"
 import Pagination from "./assets/components/pagination"
-function App() {
+import { useState } from "react"
 
+
+function App() {
+  const [paginaActual, setPaginaActual] = useState(1)
+  const tarjetasPorPagina = 5
+  const totalPaginas = Math.ceil(empleos.length / tarjetasPorPagina)
+  const inicio = (paginaActual - 1) * tarjetasPorPagina
+  const fin = inicio + tarjetasPorPagina
+  const empleosPagina = empleos.slice(inicio, fin)
   return (
     <>
       <Header/>
