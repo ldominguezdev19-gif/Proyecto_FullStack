@@ -11,7 +11,7 @@ function App() {
       <Header/>
     <main>
       <SearchSection/>
-      <section class="results">
+      <section className="results">
         <h2>Resultados de busqueda</h2>
 
         <div className="jobs-list">
