@@ -9,6 +9,8 @@ import { useState } from "react"
 
 function App() {
   const [paginaActual, setPaginaActual] = useState(1)
+  const [busqueda, setBusqueda] = useState("")
+
   const tarjetasPorPagina = 5
   const totalPaginas = Math.ceil(empleos.length / tarjetasPorPagina)
   const inicio = (paginaActual - 1) * tarjetasPorPagina
