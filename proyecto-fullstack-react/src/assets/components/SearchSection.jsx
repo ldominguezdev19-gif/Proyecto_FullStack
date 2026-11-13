@@ -1,6 +1,6 @@
 import { useId } from "react"
 
-function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologia}){
+function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologia, ubicacion, cambiarUbicacion, contrato, cambiarContrato, nivel, cambiarNivel} ){
   const idBusqueda = useId()
   return (
     <section className="search-section">
@@ -50,7 +50,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="aws">AWS</option>
           </select>
 
-          <select name="Location" id="location">
+          <select name="Location" id="location" value={ubicacion} onChange={(evento) => cambiarUbicacion(evento.target.value)}>
             <option value="">Ubicación</option>
             <option value="remoto">Remoto</option>
             <option value="barranquilla">Barranquilla</option>
@@ -58,7 +58,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="medellin">Medellin</option>
           </select>
 
-          <select name="Contract" id="contract">
+          <select name="Contract" id="contract" value={contrato} onChange={(evento) => cambiarContrato(evento.target.value)}>
             <option value="">Tipo de contrato</option>
             <option value="tiempo-completo">Tiempo Completo</option>
             <option value="medio-tiempo">Medio tiempo</option>
@@ -66,7 +66,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="practicas">Practicas</option>
           </select>
 
-          <select name="Experience" id="experience">
+          <select name="Experience" id="experience" value={nivel} onChange={(evento) => cambiarNivel(evento.target.value)}>
             <option value="">Nivel de experiencia</option>
             <option value="junior">Junior</option>
             <option value="semi-senior">Semi Senior</option>

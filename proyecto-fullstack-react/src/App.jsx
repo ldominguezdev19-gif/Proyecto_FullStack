@@ -11,9 +11,17 @@ function App() {
   const [paginaActual, setPaginaActual] = useState(1)
   const [busqueda, setBusqueda] = useState("")
   const [tecnologia, setTecnologia] = useState("")
+  const [ubicacion, setUbicacion] = useState("")
+  const [contrato, setContrato] = useState("")
+  const [nivel, setNivel] = useState("")
 
   const empleosFiltrados = empleos.filter(empleo => {
-    return empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
+    const coincideTexto = empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
+    const coincideTecnologia = tecnologia === "" || empleo.tecnologia === tecnologia
+    const coincideUbicacion = ubicacion === "" || empleo.ubicacion === ubicacion
+    const coincideContrato = contrato === "" || empleo.contrato === contrato
+    const coincideNivel = nivel === "" || empleo.nivel === nivel
+    return coincideTexto && coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel
     })
 
   const tarjetasPorPagina = 5
@@ -32,6 +40,21 @@ function App() {
     setPaginaActual(1)
   }
 
+  function manejarUbicacion(valor) {
+  setUbicacion(valor)
+  setPaginaActual(1)
+}
+
+function manejarContrato(valor) {
+  setContrato(valor)
+  setPaginaActual(1)
+}
+
+function manejarNivel(valor) {
+  setNivel(valor)
+  setPaginaActual(1)
+}
+
   return (
     <>
       <Header/>
@@ -41,6 +64,12 @@ function App() {
         cambiarBusqueda={manejarBusqueda}
         tecnologia={tecnologia}
         cambiarTecnologia={manejarTecnologia}
+          ubicacion={ubicacion}
+          cambiarUbicacion={manejarUbicacion}
+          contrato={contrato}
+          cambiarContrato={manejarContrato}
+          nivel={nivel}
+          cambiarNivel={manejarNivel}
       />
       
       <section className="results">
