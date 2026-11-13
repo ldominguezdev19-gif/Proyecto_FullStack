@@ -10,6 +10,7 @@ import { useState } from "react"
 function App() {
   const [paginaActual, setPaginaActual] = useState(1)
   const [busqueda, setBusqueda] = useState("")
+  const [tecnologia, setTecnologia] = useState("")
 
   const empleosFiltrados = empleos.filter(empleo => {
     return empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
@@ -26,6 +27,11 @@ function App() {
     setPaginaActual(1)
   }
 
+  function manejarTecnologia(valor){
+    setTecnologia(valor)
+    setPaginaActual(1)
+  }
+
   return (
     <>
       <Header/>
@@ -33,6 +39,8 @@ function App() {
       <SearchSection
         busqueda={busqueda}
         cambiarBusqueda={manejarBusqueda}
+        tecnologia={tecnologia}
+        cambiarTecnologia={manejarTecnologia}
       />
       
       <section className="results">
