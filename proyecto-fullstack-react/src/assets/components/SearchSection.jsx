@@ -1,4 +1,4 @@
-function SearchSection (){
+function SearchSection ({busqueda, cambiarBusqueda}){
   return (
     <section className="search-section">
         <h1>Encuentra tu proximo trabajo</h1>
@@ -27,6 +27,8 @@ function SearchSection (){
             required
             id="search"
             autoComplete="off"
+            value={busqueda}
+            onChange={(evento) => camnbiarBusqueda(evento.target.value)}
           />
         </form>
 

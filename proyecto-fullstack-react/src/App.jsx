@@ -11,6 +11,10 @@ function App() {
   const [paginaActual, setPaginaActual] = useState(1)
   const [busqueda, setBusqueda] = useState("")
 
+  const empleosFiltrados = empleos.filter(empleo => {
+    return empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
+    })
+    
   const tarjetasPorPagina = 5
   const totalPaginas = Math.ceil(empleos.length / tarjetasPorPagina)
   const inicio = (paginaActual - 1) * tarjetasPorPagina
@@ -20,7 +24,11 @@ function App() {
     <>
       <Header/>
     <main>
-      <SearchSection/>
+      <SearchSection
+        busqueda={busqueda}
+        cambiarBusqueda={setBusqueda}
+      />
+      
       <section className="results">
         <h2>Resultados de busqueda</h2>
 
