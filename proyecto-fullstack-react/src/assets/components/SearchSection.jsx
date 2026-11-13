@@ -1,10 +1,13 @@
+import { useId } from "react"
+
 function SearchSection ({busqueda, cambiarBusqueda}){
+  const idBusqueda = useId()
   return (
     <section className="search-section">
         <h1>Encuentra tu proximo trabajo</h1>
         <p>Explora miles de oportunidades en el sector tecnologico.</p>
 
-        <form role="search-form" className="search-form">
+        <form role="search" className="search-form" onSubmit={(evento) => evento.preventDefault()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -21,14 +24,17 @@ function SearchSection ({busqueda, cambiarBusqueda}){
             <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
             <path d="M21 21l-6 -6" />
           </svg>
+          <label htmlFor={idBusqueda} className="visually-hidden">
+            Buscar empleos
+          </label>
           <input
             type="text"
             placeholder="Buscar trabajos, empresas o habilidades"
             required
-            id="search"
+            id={idBusqueda}
             autoComplete="off"
             value={busqueda}
-            onChange={(evento) => camnbiarBusqueda(evento.target.value)}
+            onChange={(evento) => cambiarBusqueda(evento.target.value)}
           />
         </form>
 

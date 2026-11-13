@@ -14,19 +14,25 @@ function App() {
   const empleosFiltrados = empleos.filter(empleo => {
     return empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
     })
-    
+
   const tarjetasPorPagina = 5
-  const totalPaginas = Math.ceil(empleos.length / tarjetasPorPagina)
+  const totalPaginas = Math.ceil(empleosFiltrados.length / tarjetasPorPagina)
   const inicio = (paginaActual - 1) * tarjetasPorPagina
   const fin = inicio + tarjetasPorPagina
-  const empleosPagina = empleos.slice(inicio, fin)
+  const empleosPagina = empleosFiltrados.slice(inicio, fin)
+
+  function manejarBusqueda(texto){
+    setBusqueda(texto)
+    setPaginaActual(1)
+  }
+
   return (
     <>
       <Header/>
     <main>
       <SearchSection
         busqueda={busqueda}
-        cambiarBusqueda={setBusqueda}
+        cambiarBusqueda={manejarBusqueda}
       />
       
       <section className="results">
