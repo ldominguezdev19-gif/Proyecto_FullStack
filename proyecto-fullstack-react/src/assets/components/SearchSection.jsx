@@ -1,6 +1,6 @@
 import { useId } from "react"
 
-function SearchSection ({busqueda, cambiarBusqueda}){
+function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologia}){
   const idBusqueda = useId()
   return (
     <section className="search-section">
@@ -39,7 +39,7 @@ function SearchSection ({busqueda, cambiarBusqueda}){
         </form>
 
         <div className="filter">
-          <select name="technology" id="technology">
+          <select name="technology" id="technology" value={tecnologia} onChange={(evento) => cambiarTecnologia(evento.target.value)}>
             <option value="">Tecnología</option>
             <option value="javascript">JavaScript</option>
             <option value="react">React</option>
