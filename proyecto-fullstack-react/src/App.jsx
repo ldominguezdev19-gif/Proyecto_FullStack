@@ -71,10 +71,12 @@ function manejarNivel(valor) {
           nivel={nivel}
           cambiarNivel={manejarNivel}
       />
-      
+
       <section className="results">
         <h2>Resultados de busqueda</h2>
-
+        {empleosFiltrados.length === 0 &&(
+          <p className="sin-resultados"> No se encontraron empleos.</p>
+        )}
         <div className="jobs-list">
             {empleosPagina.map(empleo =>(
               <JobCard
