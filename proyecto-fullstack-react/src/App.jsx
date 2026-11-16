@@ -10,17 +10,21 @@ import { useState } from "react"
 function App() {
   const [paginaActual, setPaginaActual] = useState(1)
   const [busqueda, setBusqueda] = useState("")
-  const [tecnologia, setTecnologia] = useState("")
-  const [ubicacion, setUbicacion] = useState("")
-  const [contrato, setContrato] = useState("")
-  const [nivel, setNivel] = useState("")
+  const [filtros, setFiltros] = useState({
+  tecnologia: "",
+  ubicacion: "",
+  contrato: "",
+  nivel: ""
+})
 
   const empleosFiltrados = empleos.filter(empleo => {
     const coincideTexto = empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
-    const coincideTecnologia = tecnologia === "" || empleo.tecnologia === tecnologia
-    const coincideUbicacion = ubicacion === "" || empleo.ubicacion === ubicacion
-    const coincideContrato = contrato === "" || empleo.contrato === contrato
-    const coincideNivel = nivel === "" || empleo.nivel === nivel
+    const coincideTecnologia = filtros.tecnologia === "" || empleo.tecnologia === filtros.tecnologia
+    const coincideUbicacion = filtros.ubicacion === "" || empleo.ubicacion === filtros.ubicacion
+    const coincideContrato = filtros.contrato === "" || empleo.contrato === filtros.contrato
+    const coincideNivel = filtros.nivel === "" || empleo.nivel === filtros.nivel
+
+    
     return coincideTexto && coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel
     })
 
@@ -35,25 +39,10 @@ function App() {
     setPaginaActual(1)
   }
 
-  function manejarTecnologia(valor){
-    setTecnologia(valor)
+  function manejarFiltro(campo, valor){
+    setFiltros({...filtros, [campo]: valor})
     setPaginaActual(1)
   }
-
-  function manejarUbicacion(valor) {
-  setUbicacion(valor)
-  setPaginaActual(1)
-}
-
-function manejarContrato(valor) {
-  setContrato(valor)
-  setPaginaActual(1)
-}
-
-function manejarNivel(valor) {
-  setNivel(valor)
-  setPaginaActual(1)
-}
 
   return (
     <>
@@ -62,14 +51,8 @@ function manejarNivel(valor) {
       <SearchSection
         busqueda={busqueda}
         cambiarBusqueda={manejarBusqueda}
-        tecnologia={tecnologia}
-        cambiarTecnologia={manejarTecnologia}
-          ubicacion={ubicacion}
-          cambiarUbicacion={manejarUbicacion}
-          contrato={contrato}
-          cambiarContrato={manejarContrato}
-          nivel={nivel}
-          cambiarNivel={manejarNivel}
+        filtros={filtros}
+        cambiarFiltro={manejarFiltro}
       />
 
       <section className="results">

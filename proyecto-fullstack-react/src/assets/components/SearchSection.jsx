@@ -1,6 +1,6 @@
 import { useId } from "react"
 
-function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologia, ubicacion, cambiarUbicacion, contrato, cambiarContrato, nivel, cambiarNivel} ){
+function SearchSection ({busqueda, cambiarBusqueda, filtros, cambiarFiltro} ){
   const idBusqueda = useId()
   return (
     <section className="search-section">
@@ -39,7 +39,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
         </form>
 
         <div className="filter">
-          <select name="technology" id="technology" value={tecnologia} onChange={(evento) => cambiarTecnologia(evento.target.value)}>
+          <select name="technology" id="technology" value={filtros.tecnologia} onChange={(evento) => cambiarFiltro("tecnologia", evento.target.value)}>
             <option value="">Tecnología</option>
             <option value="javascript">JavaScript</option>
             <option value="react">React</option>
@@ -50,7 +50,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="aws">AWS</option>
           </select>
 
-          <select name="Location" id="location" value={ubicacion} onChange={(evento) => cambiarUbicacion(evento.target.value)}>
+          <select name="Location" id="location" value={filtros.ubicacion} onChange={(evento) => cambiarFiltro("ubicacion", evento.target.value)}>
             <option value="">Ubicación</option>
             <option value="remoto">Remoto</option>
             <option value="barranquilla">Barranquilla</option>
@@ -58,7 +58,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="medellin">Medellin</option>
           </select>
 
-          <select name="Contract" id="contract" value={contrato} onChange={(evento) => cambiarContrato(evento.target.value)}>
+          <select name="Contract" id="contract" value={filtros.contrato} onChange={(evento) => cambiarFiltro("contrato", evento.target.value)}>
             <option value="">Tipo de contrato</option>
             <option value="tiempo-completo">Tiempo Completo</option>
             <option value="medio-tiempo">Medio tiempo</option>
@@ -66,7 +66,7 @@ function SearchSection ({busqueda, cambiarBusqueda, tecnologia, cambiarTecnologi
             <option value="practicas">Practicas</option>
           </select>
 
-          <select name="Experience" id="experience" value={nivel} onChange={(evento) => cambiarNivel(evento.target.value)}>
+          <select name="Experience" id="experience" value={filtros.nivel} onChange={(evento) => cambiarFiltro("nivel", evento.target.value)}>
             <option value="">Nivel de experiencia</option>
             <option value="junior">Junior</option>
             <option value="semi-senior">Semi Senior</option>
