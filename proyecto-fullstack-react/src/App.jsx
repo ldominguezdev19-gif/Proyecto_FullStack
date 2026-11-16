@@ -19,13 +19,11 @@ function App() {
 
   const empleosFiltrados = empleos.filter(empleo => {
     const coincideTexto = empleo.titulo.toLowerCase().includes(busqueda.toLowerCase())
-    const coincideTecnologia = filtros.tecnologia === "" || empleo.tecnologia === filtros.tecnologia
-    const coincideUbicacion = filtros.ubicacion === "" || empleo.ubicacion === filtros.ubicacion
-    const coincideContrato = filtros.contrato === "" || empleo.contrato === filtros.contrato
-    const coincideNivel = filtros.nivel === "" || empleo.nivel === filtros.nivel
+    const coincideFiltros = Object.entries(filtros).every(([campo,valor]) => {
+      return valor ==="" || empleo[campo] === valor
+    })
 
-    
-    return coincideTexto && coincideTecnologia && coincideUbicacion && coincideContrato && coincideNivel
+    return coincideTexto && coincideFiltros
     })
 
   const tarjetasPorPagina = 5
