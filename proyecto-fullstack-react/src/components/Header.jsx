@@ -1,10 +1,12 @@
+import Link from "./Link"
+
 function Header () {
   return (
     <header className="site-header">
       <h2>DevSearch</h2>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="/Search">Empleos</a>
+        <Link href="/">Inicio</Link>
+        <Link href="/Search">Empleos</Link>
       </nav>
 
       <div>
