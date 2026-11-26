@@ -5,10 +5,19 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound";
 
 function App() {
+  const rutaActual = window.location.pathname
+  let pagina = <NotFound/> 
+
+  if (rutaActual === "/"){
+    pagina = <Home/>
+  } else if (rutaActual === "/Search"){
+    pagina = <Search/>
+  }
+
   return (
     <>
       <Header />
-      <Search />
+      {pagina}
       <Footer />
     </>
   );
