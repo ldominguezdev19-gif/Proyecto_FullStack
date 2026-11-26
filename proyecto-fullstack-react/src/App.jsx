@@ -1,9 +1,9 @@
-import JobCard from "./assets/components/JobCard"
-import Header from "./assets/components/Header"
-import Footer from "./assets/components/Footer"
-import SearchSection from "./assets/components/SearchSection"
+import JobCard from "./components/JobCard"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import SearchSection from "./components/SearchSection"
 import empleos from "./data.json"
-import Pagination from "./assets/components/Pagination"
+import Pagination from "./components/Pagination"
 import { useState } from "react"
 
 
