@@ -3,8 +3,8 @@ function Header () {
     <header className="site-header">
       <h2>DevSearch</h2>
       <nav>
-        <a href="index.html">Inicio</a>
-        <a href="/empleos.html">Empleos</a>
+        <a href="/">Inicio</a>
+        <a href="/Search">Empleos</a>
       </nav>
 
       <div>
