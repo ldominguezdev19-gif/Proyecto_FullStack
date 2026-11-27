@@ -3,9 +3,10 @@ import Footer from "./components/Footer";
 import Search from "./pages/Search";
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound";
+import useRouter from "./hooks/UseRouter";
 
 function App() {
-  const rutaActual = window.location.pathname
+  const rutaActual = useRouter()
   let pagina = <NotFound/> 
 
   if (rutaActual === "/"){
